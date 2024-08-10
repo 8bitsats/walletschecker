@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Wallet Balance Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solana Wallet Balance Checker</h1>
+        <form id="wallet-form">
+            <input type="text" id="wallet-address" placeholder="Enter Solana Wallet Address" required>
+            <button type="submit">Check Balance</button>
+        </form>
+        <div id="balance-output">
+            <p id="balance">Balance: <span id="balance-amount">-</span> SOL</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@latest/lib/index.iife.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

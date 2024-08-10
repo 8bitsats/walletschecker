@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token-Gated Solana dApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login-container">
+            <h1>Welcome to the Token-Gated Solana dApp</h1>
+            <button id="login-button">Login with Web3Auth</button>
+        </div>
+        <div id="main-container" style="display:none;">
+            <h2>Token Gated Content</h2>
+            <div id="token-gate-status"></div>
+            <div id="swap-container" style="display:none;">
+                <h3>Token Swap</h3>
+                <!-- Swap UI -->
+                <button id="swap-button">Swap Tokens</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@web3auth/web3auth"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@toruslabs/torus-embed"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
